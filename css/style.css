@@ -1,266 +1,265 @@
 /* reset css */
 * {
-    margin: 0px;
-    padding: 0px;
-  }
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar {
+  height: 116px;
+  display: flex;
+  top: 0px;
+  align-items: center;
+  /* position: relative; */
+}
+
+#navbar::before {
+  content: "";
+  background-color: rgba(139, 11, 11, 0.858);
+  position: absolute;
+  width: 100%;
+  height: 116px;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+
+#logo {
+  margin: 25px 25px;
+
+}
+
+#logo img {
+  border-radius: 50%;
+  height: 60px;
+  margin: 1px 1px;
+}
+
+#navbar ul {
+  display: flex;
+
+}
+
+#navbar ul li {
+  font-size: 1.3rem;
+  list-style: none;
+}
+
+#navbar ul a {
+  /* display: block; */
+  /* background-color: aqua; */
+  color: white;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 3px 15px;
+  text-decoration: none;
+}
+
+#navbar ul a:hover {
+  color: black;
+  background-color: white;
+
+
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 375px;
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  background: url('../Food-order-img/homebg.jpg') no-repeat center center/cover;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+
+
+}
+
+.h-primary {
+  font-size: 2.5rem;
+  padding: 12px;
+}
+
+#home h1 {
+  color: black;
+  text-align: center;
+}
+
+.h-secondery {
+  font-size: 1.3rem;
+  font-family: 'Lucida Sans Regular', Verdana, sans-serif;
+  padding: 3px;
+}
+
+#home p {
+  color: black;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Rubik', sans-serif;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgba(255, 64, 0, 0.545);
+  color: black;
+  margin: 15px;
+  font-size: .9rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* .btn:hover{
+  font-size: 2rem;
+} */
+
+.services-container {
+  align-items: center;
+}
+
+#services {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+
+.box {
+  border: 2px solid brown;
+  border-radius: 25px;
+  background-color: rgb(253, 255, 236);
+  padding: 30px;
+  margin: 5px 20px;
+
+
+}
+
+.box img {
   
-  #navbar {
-    height: 116px;
-    display: flex;
-    top: 0px;
-    align-items: center;
-    /* position: relative; */
-  }
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+
+}
+
+
+
+#services .box p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* client section */
+#client-section {
+  height: 210px;
+  position: relative;
+
+}
+
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url('../Food-order-img/clientbg.png')  no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  top: 0px;
+  left: 0px;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item {
+  padding: 15px 40px;
+}
+
+.client-item img {
+  height: 80px;
+}
+
+/* contact section */
+
+#contact{
+  position: relative;
+
   
-  #navbar::before {
-    content: "";
-    background-color: rgba(139, 11, 11, 0.858);
-    position: absolute;
-    width: 100%;
-    height: 116px;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-    opacity: 0.8;
+
+}
+
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../Food-order-img/contactus.jpg') no-repeat center center/cover;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  opacity: 0.6;
+
+}
+
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 70px; */
+}
+
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 12px;
+}
+
+#contact-box form{
+  width: 30%;
+}
+
+
+#contact-box label{
+  font-size: 1.3rem;
+  font-family: 'Lucida Sans Regular', Verdana, sans-serif;
+}
+
+.btn-s{
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgba(187, 86, 53, 0.545);
+  color: black;
+  margin: 15px;
+  font-size: .8rem;
+  border-radius: 15px;
+  cursor: pointer;
   
-  }
-  
-  
-  #logo {
-    margin: 25px 25px;
-  
-  }
-  
-  #logo img {
-    border-radius: 50%;
-    height: 60px;
-    margin: 1px 1px;
-  }
-  
-  #navbar ul {
-    display: flex;
-  
-  }
-  
-  #navbar ul li {
-    font-size: 1.3rem;
-    list-style: none;
-  }
-  
-  #navbar ul a {
-    /* display: block; */
-    /* background-color: aqua; */
-    color: white;
-    margin: 10px;
-    border-radius: 20px;
-    padding: 3px 15px;
-    text-decoration: none;
-  }
-  
-  #navbar ul a:hover {
-    color: black;
-    background-color: white;
-  
-  
-  }
-  
-  #home {
-    display: flex;
-    flex-direction: column;
-    padding: 4px 200px;
-    justify-content: center;
-    align-items: center;
-    height: 375px;
-    position: relative;
-  }
-  
-  #home::before {
-    content: "";
-    position: absolute;
-    background: url('../Food-order-img/homebg.jpg') no-repeat center center/cover;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.4;
-  
-  
-  }
-  
-  .h-primary {
-    font-size: 2.5rem;
-    padding: 12px;
-  }
-  
-  #home h1 {
-    color: black;
-    text-align: center;
-  }
-  
-  .h-secondery {
-    font-size: 1.3rem;
-    font-family: 'Lucida Sans Regular', Verdana, sans-serif;
-    padding: 3px;
-  }
-  
-  #home p {
-    color: black;
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: 'Rubik', sans-serif;
-  }
-  
-  .btn {
-    padding: 6px 20px;
-    border: 2px solid white;
-    background-color: rgba(255, 64, 0, 0.545);
-    color: black;
-    margin: 15px;
-    font-size: .9rem;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-  
-  /* .btn:hover{
-    font-size: 2rem;
-  } */
-  
-  .services-container {
-    align-items: center;
-  }
-  
-  #services {
-    display: flex;
-    align-items: center;
-    margin: 15px;
-  }
-  
-  .box {
-    border: 2px solid brown;
-    border-radius: 25px;
-    background-color: rgb(253, 255, 236);
-    padding: 30px;
-    margin: 5px 20px;
-  
-  
-  }
-  
-  .box img {
-    
-    height: 100px;
-    display: block;
-    margin: auto;
-  }
-  
-  .text-center {
-    text-align: center;
-  
-  }
-  
-  
-  
-  #services .box p {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  /* client section */
-  #client-section {
-    height: 210px;
-    position: relative;
-  
-  }
-  
-  #client-section::before {
-    content: "";
-    position: absolute;
-    background: url('../Food-order-img/clientbg.png')  no-repeat center center/cover;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.4;
-    top: 0px;
-    left: 0px;
-  }
-  
-  #clients {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .client-item {
-    padding: 15px 40px;
-  }
-  
-  .client-item img {
-    height: 80px;
-  }
-  
-  /* contact section */
-  
-  #contact{
-    position: relative;
-  
-    
-  
-  }
-  
-  #contact::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('../Food-order-img/contactus.jpg') no-repeat center center/cover;
-    z-index: -1;
-    top: 0px;
-    left: 0px;
-    opacity: 0.6;
-  
-  }
-  
-  #contact-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding-bottom: 70px; */
-  }
-  
-  #contact-box input,
-  #contact-box textarea{
-    width: 100%;
-    padding: 0.3rem;
-    border-radius: 12px;
-  }
-  
-  #contact-box form{
-    width: 30%;
-  }
-  
-  
-  #contact-box label{
-    font-size: 1.3rem;
-    font-family: 'Lucida Sans Regular', Verdana, sans-serif;
-  }
-  
-  .btn-s{
-    padding: 6px 20px;
-    border: 2px solid white;
-    background-color: rgba(187, 86, 53, 0.545);
-    color: black;
-    margin: 15px;
-    font-size: .8rem;
-    border-radius: 15px;
-    cursor: pointer;
-    
-  }
-  
-  ::placeholder{
-   color: orange;
-  }
-  
-  footer{
-    background: #000;
-    color: white;
-    padding: 9px 20px;
-  }  
+}
+
+::placeholder{
+ color: orange;
+}
+
+footer{
+  background: #000;
+  color: white;
+  padding: 9px 20px;
+}  
