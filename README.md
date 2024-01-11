@@ -19,7 +19,7 @@ This project showcases a responsive web page for online food service. Whether yo
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://bhavesh-kumar98.github.io/online-food-service
+   git clone https://github.com/bhavesh-kumar98/online-food-service
 
 2. **Open in Browser:**<br/>
    Click the [URL](https://bhavesh-kumar98.github.io/online-food-service) in your preferred browser to explore the web page.
